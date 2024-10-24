@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+@font-face {
+    font-family: Integral;
+    src: url(/font/Fontspring-DEMO-integralcf-bold.otf);
+}
+
+:root{
+    --primary: #af7777;
+    --secondary: #5969a0;
+}
+
+.lexend {
+  font-family: "Lexend", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+*::selection{
+    background-color: #403f61;
+    color: white;
+}
+
+*:not(#imgContainer, img){
+    overflow-x: hidden;
+}
+
+h1{
+    font-family: Integral, Arial, Helvetica, sans-serif;
+}
+
+.headH1{
+    color: #eef2ff;
+    letter-spacing: 1px;
+}
+
+p{
+    font-family: Lexend, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+body{
+    background-color: var(--primary);
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+label{
+    font-family: lexend, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+button[type=submit]{
+    padding: 5px;
+    border: none;
+    border-radius: 9px;
+    padding: 12px 20px;
+    border: none;
+    background-color: var(--secondary);
+    color: white;
+    font-family: Integral, Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+
+#alertContainer{
+    display: grid;
+    place-items: center;
+    min-height: fit-content;
+    height: 25%;
+    border-radius: 6px;
+    background-color: var(--secondary);
+    color: #1c2236;
+    max-width: 500px;
+}
+
+#alertWrapper{
+    width: 100vw;
+    height: 100dvh;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+#imgWrapper{
+    width: 100vw;
+    height: 100dvh;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+#afterSend{
+    width: 100vw;
+    height: 100dvh;
+    display: none;
+    background-color: var(--primary);
+    z-index: 10;
+}
+
+#afterSendHeader{
+    color: #edf2ff;
+}
+
+
+#close{
+    padding: 5px 20px;
+    border: none;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-family: lexend, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+#close:hover{
+    background-color: white;
+    color: black;
+}
+
+#buttonWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
